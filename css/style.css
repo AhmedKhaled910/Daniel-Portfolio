@@ -1,0 +1,515 @@
+*:root{
+    --main-font: font-family: "Montserrat", sans-serif;
+    --secondary-font: font-family: "Poppins", sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--main-font);
+    color: #403934;
+}
+
+
+.navbar {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar-brand{
+    font-family: var(--main-font);
+    font-weight: bolder;
+}
+
+nav .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.nav-item {
+    position: relative;
+    font-family: var(--secondary-font);
+    padding-right: 20px;
+}
+
+.nav-item a{
+    color: #fff;
+}
+
+.navbar-toggler{
+    border: unset;
+    color: #fff;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 1s ease;
+}
+
+  
+.nav-item:hover::after {
+    width: 70%;
+}
+  
+.home{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.home-sec {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.home-sec h1{
+    font-size: 70px;
+    color: #fff;
+}
+
+.home-icons a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.home-icons .fa-brands{
+    background-color: rgba(0, 0, 0, 0.455);
+    border-radius: 50%;
+}
+
+.typewriter::before {
+    content: "I Am";
+    font-family: var(--main-font);
+    font-size: 44px;
+    margin-right: 5px;
+
+}
+
+.typewriter::after {
+    content: "";
+    animation-name: typing;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    font-size: 44px;
+}
+
+
+@keyframes typing{
+    0%{content: "|";}
+    1%{ content: "L|"; }
+    2%{ content: "La|";}
+    3%{ content: "Lar|"; }
+    4%{ content: "Lary|"; }
+    5%{ content: "Lary |"; }
+    6%{ content: "Lary D|"; }
+    7%{ content: "Lary Da|"; }
+    8%{ content: "Lary Dan|"; }
+    9%{ content: "Lary Dani|"; }
+    10%{ content: "Lary Danie|"; }
+    11%{ content: "Lary Daniel|"; }
+    12%{ content: "Lary Daniels|"; }
+    13%{ content: "Lary Daniel|"; }
+    14%{ content: "Lary Danie|"; }
+    15%{ content: "Lary Dani|"; }
+    16%{ content: "Lary Dan|"; }
+    17%{ content: "Lary Da|"; }
+    18%{ content: "Lary D|";}
+    19%{ content: "Lary |";}
+    20% { content: "Lary|";}
+    22%{ content: "Lar|"; }
+    24%{ content: "La|"; }
+    26%{ content: "L|"; }
+    28%{ content: "|"; }
+    30%{ content: "D|"; }
+    32%{ content: "De|"; }
+    34%{ content: "Dev|"; }
+    36%{ content: "Deve|"; }
+    38%{ content: "Devel|"; }
+    40%{ content: "Develo|"; }
+    42%{ content: "Develop|"; }
+    44%{ content: "Develope|"; }
+    46%{ content: "Developer|"; }
+    48%{ content: "Develope|"; }
+    50%{ content: "Develop|"; }
+    52%{ content: "Develo|"; }
+    54%{ content: "Devel|"; }
+    56%{ content: "Deve|"; }
+    58%{ content: "Dev|"; }
+    60%{ content: "De|"; }
+    62%{ content: "D|"; }
+    64%{ content: "|";}
+    66%{ content: "|"; }
+    68%{ content: "D|"; }
+    70%{ content: "De|"; }
+    72%{ content: "Des|"; }
+    74%{ content: "Desi|"; }
+    76%{ content: "Desig|"; }
+    78%{ content: "Design|"; }
+    80%{ content: "Designe|"; }
+    82%{ content: "Designer|"; }
+    84%{ content: "Designe|"; }
+    88%{ content: "Design|"; }
+    90%{ content: "Desig|"; }
+    92%{ content: "Desi|"; }
+    94%{ content: "Des|"; }
+    96%{ content: "De|"; }
+    98%{ content: "D|"; }
+    100%{ content: "|"; }
+   
+}
+
+
+.content h3{
+    font-weight: 900;
+}
+
+.content h5{
+    word-spacing: 5px;
+    font-size: 16px;
+    color: #a9a9ac;
+}
+
+.content .details {
+    font-family: var(--secondary-font);
+    color: #748284;
+    padding: 10px 0;
+}
+
+.progress{
+    height: 25px;
+    box-shadow: 0px 4px 8px rgba(122, 122, 122, 0.4) inset;
+}
+
+.progress-bar{
+    border-radius: 5px;
+}
+
+.progress-bar .text{
+    font-size: 13px;
+}
+
+.about img{
+    width: 80%;
+}
+
+.about .img{
+    position: relative;
+}
+
+.about .img::after{
+    content: "";
+    position: absolute;
+    left: 50px;
+    bottom: -50px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 50%;
+    height: 70%;
+    z-index: -1;
+}
+
+.about .btns a{
+    text-decoration: none;
+    margin: 50px 0;
+    margin-right: 10px;
+}
+
+.about .btn1{
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #000;
+    padding: 5px 25px;
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+
+.about .btn1:hover{
+    color: #000;
+    background-color: transparent;
+}
+
+.about .btn2{
+    color: #000;
+    border: 2px solid #000;
+    padding: 5px 25px;
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+
+.about .btn2:hover{
+    color: #fff;
+    background-color: black;
+}
+
+
+.services{
+    background-color: #f7f7f7;
+}
+
+.text-box h2{
+    padding: 20px 0;
+    font-weight: 900;
+    font-size: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.text-box h2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: 0 auto;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    width: 15%;
+    height: 50%;
+    z-index: -1;
+}
+
+.services .col-lg-4 .content{
+    background-color: #fff;
+    margin: 30px 0;
+    padding: 20px 40px;
+    box-shadow: 0px 2px 8px #dcdcdc;
+}
+
+.services .mx-auto{
+    background-color: #f4f4f4;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+
+.services .content i{
+    transition: all 1s;
+}
+
+.services .content:hover i{
+    background-color: #000;
+    color: #fff;
+}
+
+.services .content h4{
+    padding: 10px 0;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+
+.work .mini-nav .nav{
+    margin: 20px 0;
+    border-color: unset;
+    border-width: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-nav .nav-link{
+    border: none;
+
+}
+
+.mini-nav ul li a{
+    margin: 20px auto;
+    color: #000;
+    text-decoration: none;
+    font-family: var(--main-font);
+    font-weight: 900;
+    position: relative;
+}
+.mini-nav ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #000;
+    transition: width 1s ease;
+}
+
+.mini-nav ul li a:hover::after{
+    width: 100%;
+}
+
+figcaption.overlay{
+    --space1-:10px;
+    --space2-:20px;
+    top:var(--space1-);
+    bottom:var(--space1-);
+    right:var(--space2-);
+    left:var(--space2-);
+
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+figcaption.overlay h6{
+    transform: translateY(-10px);
+    transition: all 0.5s;
+}
+
+figcaption.overlay .icon{
+    transform: translateY(10px);
+    transition: all 0.5s;
+}
+
+.item:hover figcaption .icon{
+    transform: translateY(0);
+}
+
+.item:hover figcaption h6{
+    transform: translateY(0);
+}
+
+.item:hover figcaption{
+    opacity: 1;
+}
+
+.work .icon .fa-solid{
+    padding: 6px 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 1px solid #000;
+    transition: all 0.5s;
+}
+
+.work .icon .fa-solid:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.clients{
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+
+.clients img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 50px auto;
+}
+
+.clients p{
+    font-family: var(--secondary-font);
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.clients h4{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.clients .carousel-indicators .btns{
+    background-color: #666666;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.counter h3 + p{
+    font-family: var(--main-font);
+}
+
+.counter h3{
+    font-weight: 900;
+}
+
+.team{
+    background-color: #f4f4f4;
+}
+
+.team .card-body{
+    background-color: #5b5b5b;
+    font-family: var(--main-font);
+    color: #fff;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.team .card-body h4{
+    font-size: 34px;
+}
+
+.team .icon .fa-brands{
+    padding: 6px 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 1px solid #000;
+    transition: all 0.5s;
+}
+
+.team .icon .fa-brands:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.team .card-image img{
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.team .card-image:hover img{
+    transform: scale(1.2);
+}
+
+.team .overlay{
+    --space1-:10px;
+    --space2-:20px;
+    top:var(--space1-);
+    bottom:var(--space1-);
+    right:var(--space2-);
+    left:var(--space2-);
+
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.team .card:hover .overlay{
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+
+.contact .icon .fa-solid{
+    width: 70px;
+    height: 70px;
+    padding-top: 35px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    transition: all 1s;
+}
+
+.contact .content:hover .fa-solid{
+    background-color: #000;
+    color: #fff;
+}
+
+.footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #000;
+}
